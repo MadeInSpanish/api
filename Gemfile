@@ -9,9 +9,6 @@ gem 'puma', '~> 3.0'
 gem 'faker'
 gem 'factory_girl_rails'
 
-# Api
-gem 'active_model_serializers', '~> 0.10.0'
-
 # For developing JSON API
 gem 'jsonapi-resources'
 

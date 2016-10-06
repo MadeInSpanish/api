@@ -12,6 +12,9 @@ gem 'factory_girl_rails'
 # Api
 gem 'active_model_serializers', '~> 0.10.0'
 
+# For developing JSON API
+gem 'jsonapi-resources'
+
 group :development, :test do
   gem 'byebug', platform: :mri
 end

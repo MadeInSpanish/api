@@ -12,6 +12,10 @@ gem 'factory_girl_rails'
 # For developing JSON API
 gem 'jsonapi-resources'
 
+
+# To makes cross-origin AJAX possible.
+gem 'rack-cors', :require => 'rack/cors'
+
 group :development, :test do
   gem 'byebug', platform: :mri
 end

@@ -26,5 +26,18 @@ module Catlog
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+
+    # Do not swallow errors in after_commit/after_rollback callbacks.
+    config.active_record.raise_in_transactional_callbacks = true
+
+    # The CORS spec allows web applications to make cross domain AJAX 
+    config.middleware.insert_before 0, Rack::Cors do
+      allow do
+        origins '*'
+        resource '*', :headers => :any,
+                      :methods => [:get, :post, :delete, :put, :options, :head],
+                      :max_age => 0
+      end
+    end
   end
 end

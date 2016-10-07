@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
-  resources :products
-  resources :categories
+  namespace :api do
+    namespace :v1 do
+      jsonapi_resources :products
+      jsonapi_resources :categories
+    end
+  end
 end

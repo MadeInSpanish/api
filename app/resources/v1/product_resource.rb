@@ -1,4 +1,4 @@
-class Api::V1::ProductResource < JSONAPI::Resource
+class V1::ProductResource < JSONAPI::Resource
   attributes  :name,
               :price,
               :quantity,

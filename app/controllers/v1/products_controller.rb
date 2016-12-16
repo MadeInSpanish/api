@@ -1,2 +1,2 @@
-class V1::ProductsController < JSONAPI::ResourceController
+class V1::ProductsController < ApplicationController
 end

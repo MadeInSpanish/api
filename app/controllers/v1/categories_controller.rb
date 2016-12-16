@@ -1,2 +1,2 @@
-class V1::CategoriesController < JSONAPI::ResourceController
+class V1::CategoriesController < ApplicationController
 end

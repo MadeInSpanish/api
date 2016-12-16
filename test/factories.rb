@@ -2,13 +2,13 @@ require "faker"
 
 FactoryGirl.define do
   factory :user do
-    city "MyString"
-    country "MyString"
-    email "MyString"
-    info "MyString"
-    name "MyString"
-    phone_number "MyString"
-    slug "MyString"
+    city { Faker::Address.city }
+    country { Faker::Address.country }
+    email { Faker::Internet.email }
+    info { Faker::Lorem.sentence }
+    name { Faker::Commerce.color }
+    phone_number '1234567890'
+    slug { Faker::Commerce.color }
   end
 
   factory :category do

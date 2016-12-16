@@ -1,6 +1,15 @@
 require "faker"
 
 FactoryGirl.define do
+  factory :user do
+    city "MyString"
+    country "MyString"
+    email "MyString"
+    info "MyString"
+    name "MyString"
+    phone_number "MyString"
+    slug "MyString"
+  end
 
   factory :category do
     name { Faker::Commerce.department }

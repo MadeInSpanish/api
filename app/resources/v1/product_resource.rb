@@ -8,4 +8,7 @@ class V1::ProductResource < JSONAPI::Resource
               :category_id
 
   belongs_to  :category
+  belongs_to  :user
+
+  filter :user
 end

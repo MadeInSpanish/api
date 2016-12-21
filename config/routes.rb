@@ -4,5 +4,6 @@ Rails.application.routes.draw do
     jsonapi_resources :categories
     jsonapi_resources :users
     jsonapi_resources :stores
+    jsonapi_resources :customers
   end
 end

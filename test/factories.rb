@@ -14,7 +14,19 @@ FactoryGirl.define do
 
     info { Faker::Lorem.sentence }
   end
+
+  factory :customer do
+    city { Faker::Address.city }
+    country { Faker::Address.country }
+    email { Faker::Internet.email }
     name { Faker::Commerce.color }
+    phone_number { Faker::PhoneNumber.cell_phone }
+    instagram_id { Faker::Number.number(10) }
+    instagram_image { Faker::Placeholdit.image("500x500", 'jpg', Faker::Color.hex_color.to_s.sub(/^#/, '')) }
+    instagram_token { Faker::Crypto.sha1 }
+    instagram_account { Faker::Commerce.color }
+
+    address { Faker::Address.street_address }
   end
 
   factory :category do

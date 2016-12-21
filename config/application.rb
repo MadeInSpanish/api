@@ -30,13 +30,14 @@ module Catlog
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
 
-    # The CORS spec allows web applications to make cross domain AJAX 
+    # The CORS spec allows web applications to make cross domain AJAX
     config.middleware.insert_before 0, Rack::Cors do
       allow do
         origins '*'
         resource '*', :headers => :any,
                       :methods => [:get, :post, :delete, :put, :options, :head],
-                      :max_age => 0
+                      :max_age => 0,
+                      :expose  => ['Access-Control-Allow-Origin']
       end
     end
   end

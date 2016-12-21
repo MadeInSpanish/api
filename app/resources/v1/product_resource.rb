@@ -8,7 +8,7 @@ class V1::ProductResource < JSONAPI::Resource
               :category_id
 
   belongs_to  :category
-  belongs_to  :user
+  belongs_to  :store
 
-  filter :user
+  filter :store
 end

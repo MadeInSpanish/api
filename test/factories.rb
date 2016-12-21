@@ -1,7 +1,7 @@
 require "faker"
 
 FactoryGirl.define do
-  factory :user do
+  factory :store do
     city { Faker::Address.city }
     country { Faker::Address.country }
     email { Faker::Internet.email }

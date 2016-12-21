@@ -4,6 +4,5 @@ class V1::UserResource < JSONAPI::Resource
               :country,
               :email,
               :name,
-              :phone_number,
-              :slug
+              :phone_number
 end

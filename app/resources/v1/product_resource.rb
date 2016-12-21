@@ -5,7 +5,8 @@ class V1::ProductResource < JSONAPI::Resource
               :image,
               :description,
               :photo_id,
-              :category_id
+              :category_id,
+              :store_id
 
   belongs_to  :category
   belongs_to  :store

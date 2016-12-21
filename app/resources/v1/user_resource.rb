@@ -4,5 +4,9 @@ class V1::UserResource < JSONAPI::Resource
               :country,
               :email,
               :name,
-              :phone_number
+              :phone_number,
+              :instagram_id,
+              :instagram_image,
+              :instagram_token,
+              :instagram_account
 end

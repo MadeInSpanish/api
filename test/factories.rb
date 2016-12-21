@@ -5,10 +5,16 @@ FactoryGirl.define do
     city { Faker::Address.city }
     country { Faker::Address.country }
     email { Faker::Internet.email }
-    info { Faker::Lorem.sentence }
     name { Faker::Commerce.color }
-    phone_number '1234567890'
-    slug { Faker::Commerce.color }
+    phone_number { Faker::PhoneNumber.cell_phone }
+    instagram_id { Faker::Number.number(10) }
+    instagram_image { Faker::Placeholdit.image("500x500", 'jpg', Faker::Color.hex_color.to_s.sub(/^#/, '')) }
+    instagram_token { Faker::Crypto.sha1 }
+    instagram_account { Faker::Commerce.color }
+
+    info { Faker::Lorem.sentence }
+  end
+    name { Faker::Commerce.color }
   end
 
   factory :category do

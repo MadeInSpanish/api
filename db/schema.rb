@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161221180129) do
+ActiveRecord::Schema.define(version: 20161221215001) do
 
   create_table "categories", force: :cascade do |t|
     t.string   "name"
@@ -40,9 +40,14 @@ ActiveRecord::Schema.define(version: 20161221180129) do
     t.string   "info"
     t.string   "name"
     t.string   "phone_number"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
     t.string   "type"
+    t.string   "instagram_id"
+    t.string   "instagram_image"
+    t.string   "instagram_token"
+    t.string   "instagram_account"
+    t.text     "address"
   end
 
 end

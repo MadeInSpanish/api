@@ -11,5 +11,5 @@ class V1::ProductResource < JSONAPI::Resource
   belongs_to  :category
   belongs_to  :store
 
-  filter :store
+  filters :store_id
 end

@@ -31,13 +31,13 @@ module Catlog
     config.active_record.raise_in_transactional_callbacks = true
 
     # The CORS spec allows web applications to make cross domain AJAX
-    # config.middleware.insert_before 0, Rack::Cors do
-    #   allow do
-    #     origins '*'
-    #     resource '*', :headers => :any,
-    #                   :methods => [:get, :post, :delete, :put, :options, :head],
-    #                   :max_age => 0
-    #   end
-    # end
+    config.middleware.insert_before 'Rack::Runtime', 'Rack::Cors' do
+      allow do
+        origins '*'
+        resource '*',
+                 headers: :any,
+                 methods: [:get, :put, :post, :patch, :delete, :options]
+      end
+    end
   end
 end

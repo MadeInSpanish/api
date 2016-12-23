@@ -5,11 +5,17 @@ class V1::ProductResource < JSONAPI::Resource
               :image,
               :description,
               :photo_id,
-              :category_id,
-              :store_id
+              :category_name,
+              :store_name
 
   belongs_to  :category
   belongs_to  :store
 
-  filters :store_id
+  def store_name
+    @model.store.name
+  end
+
+  def category_name
+    @model.category.name
+  end
 end

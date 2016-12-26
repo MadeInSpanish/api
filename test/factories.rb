@@ -8,7 +8,7 @@ FactoryGirl.define do
     name { Faker::Commerce.color }
     phone_number { Faker::PhoneNumber.cell_phone }
     instagram_id { Faker::Number.number(10) }
-    instagram_image { Faker::LoremPixel.image("500x500", false, 'people') }
+    instagram_image { Faker::Placeholdit.image("500x500", 'jpg', Faker::Color.hex_color.to_s.sub(/^#/, '')) }
     instagram_token { Faker::Crypto.sha1 }
     instagram_account { Faker::Commerce.color }
 
@@ -22,7 +22,7 @@ FactoryGirl.define do
     name { Faker::Commerce.color }
     phone_number { Faker::PhoneNumber.cell_phone }
     instagram_id { Faker::Number.number(10) }
-    instagram_image { Faker::LoremPixel.image("500x500", false, 'people') }
+    instagram_image { Faker::Placeholdit.image("500x500", 'jpg', Faker::Color.hex_color.to_s.sub(/^#/, '')) }
     instagram_token { Faker::Crypto.sha1 }
     instagram_account { Faker::Commerce.color }
 
@@ -37,7 +37,7 @@ FactoryGirl.define do
     name { Faker::Commerce.product_name }
     price { Faker::Number.number(5) }
     quantity { Faker::Number.number(1) }
-    image { Faker::LoremPixel.image("500x500", false, 'technics') }
+    image { Faker::Placeholdit.image("500x500", 'jpg', Faker::Color.hex_color.to_s.sub(/^#/, '')) }
     description { Faker::Lorem.sentence }
     photo_id { Faker::Number.number(11) }
   end

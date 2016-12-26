@@ -23,4 +23,8 @@ class V1::ProductResource < JSONAPI::Resource
   def store_image
     @model.store.instagram_image
   end
+
+  def price
+    ActionController::Base.helpers.number_to_currency(@model.price, precision: 0) 
+  end
 end

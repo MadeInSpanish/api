@@ -5,13 +5,14 @@ FactoryGirl.define do
     city { Faker::Address.city }
     country { Faker::Address.country }
     email { Faker::Internet.email }
-    name { Faker::Commerce.color }
+    name { Faker::Company.name}
     phone_number { Faker::PhoneNumber.cell_phone }
     instagram_id { Faker::Number.number(10) }
     instagram_image { Faker::Placeholdit.image("500x500", 'jpg', Faker::Color.hex_color.to_s.sub(/^#/, '')) }
     instagram_token { Faker::Crypto.sha1 }
     instagram_account { Faker::Commerce.color }
 
+    tag_list { Faker::Commerce.department(5) }
     info { Faker::Lorem.sentence }
   end
 
@@ -19,7 +20,7 @@ FactoryGirl.define do
     city { Faker::Address.city }
     country { Faker::Address.country }
     email { Faker::Internet.email }
-    name { Faker::Commerce.color }
+    name { Faker::Name.name }
     phone_number { Faker::PhoneNumber.cell_phone }
     instagram_id { Faker::Number.number(10) }
     instagram_image { Faker::Placeholdit.image("500x500", 'jpg', Faker::Color.hex_color.to_s.sub(/^#/, '')) }

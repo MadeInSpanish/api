@@ -5,5 +5,6 @@ Rails.application.routes.draw do
     jsonapi_resources :users
     jsonapi_resources :stores
     jsonapi_resources :customers
+    jsonapi_resources :tags
   end
 end

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  use_doorkeeper
   namespace :v1 do
     jsonapi_resources :products
     jsonapi_resources :categories

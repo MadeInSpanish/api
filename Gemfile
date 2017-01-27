@@ -18,6 +18,10 @@ gem 'acts-as-taggable-on', '~> 4.0'
 
 # To create an OAuth 2 provider
 gem 'doorkeeper'
+
+# Authenticate users
+gem 'devise'
+
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'sqlite3'

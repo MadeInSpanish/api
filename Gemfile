@@ -20,7 +20,8 @@ gem 'acts-as-taggable-on', '~> 4.0'
 gem 'doorkeeper'
 
 # Authenticate users
-gem 'omniauth-instagram'
+gem 'devise'
+gem 'tiddle'
 
 # Env Variables
 gem "figaro"

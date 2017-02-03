@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-
   use_doorkeeper
 
   namespace :v1 do
@@ -8,7 +7,7 @@ Rails.application.routes.draw do
     jsonapi_resources :users
     jsonapi_resources :stores
     jsonapi_resources :customers
-    get 'tags/:tag', to: 'tags#show', as: :tag
+    get 'tags/:tag', to: 'tags#show'
     jsonapi_resources :tags
   end
 end

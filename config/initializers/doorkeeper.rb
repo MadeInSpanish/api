@@ -7,11 +7,6 @@ Doorkeeper.configure do
     fail "Please configure doorkeeper resource_owner_authenticator block located in #{__FILE__}"
     # Put your resource owner authentication logic here.
     # Example implementation:
-    if user_signed_in?
-      current_user
-    else
-      redirect_to root_path
-    end
   end
   # If you want to restrict access to the web interface for adding oauth authorized applications, you need to declare the block below.
   # admin_authenticator do

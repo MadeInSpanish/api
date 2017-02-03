@@ -20,7 +20,6 @@ gem 'acts-as-taggable-on', '~> 4.0'
 gem 'doorkeeper'
 
 # Authenticate users
-gem 'devise'
 
 group :development, :test do
   gem 'byebug', platform: :mri

@@ -20,6 +20,10 @@ gem 'acts-as-taggable-on', '~> 4.0'
 gem 'doorkeeper'
 
 # Authenticate users
+gem 'omniauth-instagram'
+
+# Env Variables
+gem "figaro"
 
 group :development, :test do
   gem 'byebug', platform: :mri

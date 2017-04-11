@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170411015629) do
+ActiveRecord::Schema.define(version: 20170411031111) do
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -26,6 +26,17 @@ ActiveRecord::Schema.define(version: 20170411015629) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "auth_token", default: ""
+    t.string "city"
+    t.string "country"
+    t.string "info"
+    t.string "name"
+    t.string "phone_number"
+    t.string "type"
+    t.string "instagram_id"
+    t.string "instagram_image"
+    t.string "instagram_token"
+    t.string "instagram_account"
+    t.text "address"
     t.index ["auth_token"], name: "index_users_on_auth_token"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true

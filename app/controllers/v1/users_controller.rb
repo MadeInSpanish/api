@@ -33,6 +33,22 @@ class V1::UsersController < ApplicationController
   private
 
     def user_params
-      params.permit(:email, :password, :password_confirmation)
+      params
+      .permit(
+        :email,
+        :password,
+        :password_confirmation,
+        :city,
+        :country,
+        :info,
+        :name,
+        :phone_number,
+        :type,
+        :instagram_id,
+        :instagram_image,
+        :instagram_token,
+        :instagram_account,
+        :address
+      )
     end
 end

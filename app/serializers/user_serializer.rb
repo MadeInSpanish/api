@@ -1,3 +1,13 @@
 class UserSerializer < ActiveModel::Serializer
-  attributes :id, :email, :created_at, :updated_at, :auth_token
+  attributes :id,
+            :email,
+            :auth_token,
+            :city,
+            :country,
+            :name,
+            :phone_number,
+            :instagram_id,
+            :instagram_image,
+            :instagram_token,
+            :instagram_account
 end

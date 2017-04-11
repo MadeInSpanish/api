@@ -1,13 +1,4 @@
 Rails.application.routes.draw do
-  use_doorkeeper
-
-  namespace :v1 do
-    jsonapi_resources :products
-    jsonapi_resources :categories
-    jsonapi_resources :users
-    jsonapi_resources :stores
-    jsonapi_resources :customers
-    get 'tags/:tag', to: 'tags#show'
-    jsonapi_resources :tags
-  end
+  devise_for :users
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

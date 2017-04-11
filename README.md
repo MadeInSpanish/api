@@ -1,11 +1,24 @@
 # README
 
-Ruby 2.3.1
-Rails 5.0.0.1
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-## Routes
-- http://catlog-api.herokuapp.com/v1/stores/1/products
-- http://catlog-api.herokuapp.com/v1/stores
-- http://catlog-api.herokuapp.com/v1/products/
-- http://catlog-api.herokuapp.com/v1/categories/1/products
-- http://catlog-api.herokuapp.com/v1/categories
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...

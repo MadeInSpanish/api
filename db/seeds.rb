@@ -1,10 +1,7 @@
-5.times do
-  category = FactoryGirl.create(:category)
-  store = FactoryGirl.create(:store)
-  customer = FactoryGirl.create(:customer)
-
-  10.times do
-    FactoryGirl.create(:product, category_id: category.id, store_id: store.id)
-    puts "Creating product"
-  end
-end
+# This file should contain all the record creation needed to seed the database with its default values.
+# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
+#
+# Examples:
+#
+#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+#   Character.create(name: 'Luke', movie: movies.first)

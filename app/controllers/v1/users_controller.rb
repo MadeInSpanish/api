@@ -48,7 +48,8 @@ class V1::UsersController < ApplicationController
         :instagram_image,
         :instagram_token,
         :instagram_account,
-        :address
+        :address,
+        :tag_list => []
       )
     end
 end

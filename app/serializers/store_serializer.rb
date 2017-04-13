@@ -1,4 +1,4 @@
 class StoreSerializer < UserSerializer
-  attributes :info
+  attributes :info, :tag_list
   has_many :products
 end

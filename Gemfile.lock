@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/mbleigh/acts-as-taggable-on
+  revision: 9bb57384398cd3e198c893b0345c7b26e3b5ad5e
+  specs:
+    acts-as-taggable-on (4.0.0)
+      activerecord (>= 4.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -143,6 +150,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers
+  acts-as-taggable-on!
   byebug
   devise
   listen (>= 3.0.5, < 3.2)
